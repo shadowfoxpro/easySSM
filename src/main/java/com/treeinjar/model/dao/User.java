@@ -1,6 +1,8 @@
 package com.treeinjar.model.dao;
 
-public class User {
+import com.treeinjar.base.BaseEntity;
+
+public class User extends BaseEntity{
     private Integer userId;
 
     private String userName;
