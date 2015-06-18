@@ -1,6 +1,6 @@
-package com.treeinjar.mybatis.mapper;
+package com.treeinjar.model.mybatis.mapper;
 
-import com.treeinjar.model.User;
+import com.treeinjar.model.dao.User;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userId);

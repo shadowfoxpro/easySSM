@@ -1,11 +1,10 @@
-package com.treeinjar.model;
+package com.treeinjar.model.dto;
 
 public class User {
     private Integer userId;
 
     private String userName;
 
-    private String userPassword;
 
     public Integer getUserId() {
         return userId;
@@ -23,11 +22,4 @@ public class User {
         this.userName = userName == null ? null : userName.trim();
     }
 
-    public String getUserPassword() {
-        return userPassword;
-    }
-
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword == null ? null : userPassword.trim();
-    }
 }
