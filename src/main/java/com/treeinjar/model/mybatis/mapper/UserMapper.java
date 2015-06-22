@@ -2,7 +2,9 @@ package com.treeinjar.model.mybatis.mapper;
 
 import com.treeinjar.base.BaseMapper;
 import com.treeinjar.model.dao.User;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface UserMapper extends BaseMapper<User>{
 
 }

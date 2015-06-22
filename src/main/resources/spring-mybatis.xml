@@ -12,6 +12,11 @@
   http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
     <!-- 自动扫描 -->
     <context:component-scan base-package="com.treeinjar" />
+    <context:component-scan base-package="com.treeinjar.service.service"/>
+    <context:component-scan base-package="com.treeinjar.service.serviceimpl"/>
+    <context:component-scan base-package="com.treeinjar.model.mybatis.mapper"/>
+    <context:component-scan base-package="com.treeinjar.model.mybatis.mapping"/>
+    <context:component-scan base-package="com.treeinjar.model.dao"/>
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -40,19 +45,19 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <!-- 自动扫描mapping.xml文件 -->
-        <property name="mapperLocations" value="classpath:com/treeinjar/mapping/*Mapping.xml"></property>
+        <property name="mapperLocations" value="classpath:com/treeinjar/model/mybatis/mapping/*Mapper.xml"></property>
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.cn.hnust.dao" />
+        <property name="basePackage" value="com.treeinjar.model.mybatis.mapper" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 
     <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
-    <bean id="transactionManager"
-          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource" />
-    </bean>
+    <!--<bean id="transactionManager"-->
+          <!--class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+        <!--<property name="dataSource" ref="dataSource" />-->
+    <!--</bean>-->
 
 </beans>
