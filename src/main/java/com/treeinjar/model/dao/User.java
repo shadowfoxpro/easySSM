@@ -3,6 +3,7 @@ package com.treeinjar.model.dao;
 import com.treeinjar.base.BaseEntity;
 import org.springframework.stereotype.Repository;
 
+
 public class User extends BaseEntity{
     private Integer userId;
 
