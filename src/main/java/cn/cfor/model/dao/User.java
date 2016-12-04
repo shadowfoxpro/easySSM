@@ -1,9 +1,8 @@
-package com.treeinjar.model.dao;
+package cn.cfor.model.dao;
 
-import com.treeinjar.base.BaseEntity;
-import org.springframework.stereotype.Repository;
+import cn.cfor.base.BaseEntity;
 
-public class User extends BaseEntity{
+public class User extends BaseEntity {
     private Integer userId;
 
     private String userName;

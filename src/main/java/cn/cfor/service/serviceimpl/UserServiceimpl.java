@@ -1,21 +1,18 @@
-package com.treeinjar.service.serviceimpl;
+package cn.cfor.service.serviceimpl;
 
-import com.treeinjar.model.dao.User;
-import com.treeinjar.model.mybatis.mapper.UserMapper;
-import com.treeinjar.service.service.UserService;
+import cn.cfor.model.dao.User;
+import cn.cfor.model.mybatis.mapper.UserMapper;
+import cn.cfor.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
-/**
- * Created by cuiyingjia on 15/6/18.
- */
 @Service
 public class UserServiceimpl implements UserService{
 
-    @Autowired
-    UserMapper userMapper;
+    @Resource
+    private UserMapper userMapper;
 
     public int deleteByPrimaryKey(Integer id) {
         return 0;

@@ -1,4 +1,4 @@
-package com.treeinjar.base;
+package cn.cfor.base;
 
 /**
  * Created by cuiyingjia on 15/6/19.

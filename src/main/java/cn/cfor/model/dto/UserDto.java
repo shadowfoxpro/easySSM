@@ -1,6 +1,6 @@
-package com.treeinjar.model.dto;
+package cn.cfor.model.dto;
 
-import com.treeinjar.model.dao.User;
+import cn.cfor.model.dao.User;
 
 /**
  * Created by cuiyingjia on 15/6/19.

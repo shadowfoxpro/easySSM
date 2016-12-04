@@ -1,4 +1,4 @@
-package com.treeinjar.base;
+package cn.cfor.base;
 
 public interface BaseMapper<Entity> {
     int deleteByPrimaryKey(Integer id);
