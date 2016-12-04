@@ -1,6 +1,6 @@
 package cn.cfor.service;
 
-import cn.cfor.model.mybatis.mapper.UserMapper;
+import cn.cfor.model.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;

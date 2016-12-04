@@ -1,4 +1,4 @@
-package cn.cfor.model.mybatis.mapper;
+package cn.cfor.model.mapper;
 
 import cn.cfor.base.BaseMapper;
 import cn.cfor.model.dao.User;

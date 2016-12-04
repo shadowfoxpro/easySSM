@@ -5,7 +5,7 @@ import cn.cfor.model.dao.User;
 /**
  * Created by cuiyingjia on 15/6/19.
  */
-public class UserDto extends User{
+public class UserData extends User{
 
 
 
