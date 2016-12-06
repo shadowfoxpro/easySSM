@@ -1,9 +1,5 @@
 package cn.cfor.base;
 
-/**
- * Created by cuiyingjia on 15/6/18.
- */
-
 public interface BaseService<Entity> {
     int deleteByPrimaryKey(Integer id);
 
