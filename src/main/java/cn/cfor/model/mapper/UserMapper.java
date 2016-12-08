@@ -1,7 +1,7 @@
 package cn.cfor.model.mapper;
 
 import cn.cfor.base.BaseMapper;
-import cn.cfor.model.dao.User;
+import cn.cfor.model.vo.dao.User;
 import org.springframework.stereotype.Repository;
 
 @Repository

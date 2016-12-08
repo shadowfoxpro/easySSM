@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="cn.cfor.model.mapper.UserMapper" >
-  <resultMap id="BaseResultMap" type="cn.cfor.model.dao.User" >
+  <resultMap id="BaseResultMap" type="cn.cfor.model.vo.dao.User" >
     <id column="user_id" property="userId" jdbcType="INTEGER" />
     <result column="user_name" property="userName" jdbcType="VARCHAR" />
     <result column="user_password" property="userPassword" jdbcType="VARCHAR" />
@@ -19,13 +19,13 @@
     delete from ssm_user
     where user_id = #{userId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="cn.cfor.model.dao.User" >
+  <insert id="insert" parameterType="cn.cfor.model.vo.dao.User" >
     insert into ssm_user (user_id, user_name, user_password
       )
     values (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="cn.cfor.model.dao.User" >
+  <insert id="insertSelective" parameterType="cn.cfor.model.vo.dao.User" >
     insert into ssm_user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="userId != null" >
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="cn.cfor.model.dao.User" >
+  <update id="updateByPrimaryKeySelective" parameterType="cn.cfor.model.vo.dao.User" >
     update ssm_user
     <set >
       <if test="userName != null" >
@@ -62,7 +62,7 @@
     </set>
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="cn.cfor.model.dao.User" >
+  <update id="updateByPrimaryKey" parameterType="cn.cfor.model.vo.dao.User" >
     update ssm_user
     set user_name = #{userName,jdbcType=VARCHAR},
       user_password = #{userPassword,jdbcType=VARCHAR}

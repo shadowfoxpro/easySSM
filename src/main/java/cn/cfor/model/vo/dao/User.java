@@ -1,4 +1,4 @@
-package cn.cfor.model.dao;
+package cn.cfor.model.vo.dao;
 
 import cn.cfor.base.BaseEntity;
 

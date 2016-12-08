@@ -1,6 +1,6 @@
 package cn.cfor.service.serviceimpl;
 
-import cn.cfor.model.dao.User;
+import cn.cfor.model.vo.dao.User;
 import cn.cfor.model.mapper.UserMapper;
 import cn.cfor.service.UserService;
 import org.springframework.stereotype.Service;

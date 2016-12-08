@@ -8,8 +8,8 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = "/")
 public class IndexController {
 
-    @RequestMapping
-    public ModelAndView showLoginForm() {
+    @RequestMapping(value = {"/","/index"})
+    public ModelAndView index() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index/index");
         return modelAndView;
