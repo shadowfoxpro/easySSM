@@ -23,20 +23,9 @@ public class PublicCode {
 
     public static Map<String, Object> siteInfoMap = new HashMap<String, Object>();
 
-    public static Map<String, Object> outTradeNoMap = new HashMap<String, Object>();//add by 周利军 2014-12-26 用于存放同步用的 outTradeNo
-
-    public static ArrayList alipayBank = new ArrayList();
-
     public static final Integer IS_YES = 1;
 
     public static final Integer IS_NO = 0;
-
-    static {
-        String[] bankArr = CustomProperty.getValue("alipay.bank").split(",");
-        for (String s : bankArr) {
-            alipayBank.add(s);
-        }
-    }
 
     public static Map<String, Map<String, String>> getLinkageMap() {
         return linkageMap;

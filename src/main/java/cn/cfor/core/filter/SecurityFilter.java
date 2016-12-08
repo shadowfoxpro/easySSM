@@ -34,18 +34,18 @@ public class SecurityFilter extends OncePerRequestFilter {
         // 初始化SessionUtil
         SessionUtil.init(request);
         //网站升级,不能拦截静态资源
-        if ("1".equals(PublicCode.systemMap.get("con_upgrading")) && !includeExclusiveRQURL(requestURI, REQUEST_URL_STREING_EXCLUDE)
-                && requestURI.indexOf(REQUEST_URL_STREING_INCLUDE) == -1 && requestURI.indexOf("imagecode") == -1) {
-            if (SessionUtil.isAjaxRequest(request)) {
-                JsonResult jsonResult = new JsonResult();
-                jsonResult.setResultCode(Constants.RESULT_SESSION_OUT);
-                jsonResult.setReturnMsg(request.getContextPath() + "/upgrade");
-                jsonResult.writeJSON(response.getWriter());
-            } else {
-                request.getRequestDispatcher("/upgrade").forward(request, response);
-            }
-            return;
-        }
+//        if ("1".equals(PublicCode.systemMap.get("con_upgrading")) && !includeExclusiveRQURL(requestURI, REQUEST_URL_STREING_EXCLUDE)
+//                && requestURI.indexOf(REQUEST_URL_STREING_INCLUDE) == -1 && requestURI.indexOf("imagecode") == -1) {
+//            if (SessionUtil.isAjaxRequest(request)) {
+//                JsonResult jsonResult = new JsonResult();
+//                jsonResult.setResultCode(Constants.RESULT_SESSION_OUT);
+//                jsonResult.setReturnMsg(request.getContextPath() + "/upgrade");
+//                jsonResult.writeJSON(response.getWriter());
+//            } else {
+//                request.getRequestDispatcher("/upgrade").forward(request, response);
+//            }
+//            return;
+//        }
 
         if (requestURI.indexOf(REQUEST_URL_STREING_INCLUDE) != -1
                 && !includeExclusiveRQURL(requestURI,
@@ -63,7 +63,6 @@ public class SecurityFilter extends OncePerRequestFilter {
             return;
         }
         request.setAttribute("ctx", request.getContextPath());
-        request.setAttribute("ssoServerURL", CustomProperty.getValue("cas.server.url"));
         request.setAttribute("fullPath", RequestUtil.getBasePath(request));
         filterChain.doFilter(request, response);
     }

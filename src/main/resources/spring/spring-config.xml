@@ -24,6 +24,4 @@
     <context:component-scan base-package="cn.cfor.model.mapper"/>
 
 
-
-
 </beans>
