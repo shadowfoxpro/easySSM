@@ -314,8 +314,7 @@ public class IdCardUtil {
             sum = sum + Integer.valueOf(c + "") * iflag;
             iflag--;
         }
-        return (sum % 10 == 0 ? 0 : (10 - sum % 10)) == Integer.valueOf(end) ? true
-                : false;
+        return (sum % 10 == 0 ? 0 : (10 - sum % 10)) == Integer.valueOf(end) ? true : false;
     }
 
     /**
