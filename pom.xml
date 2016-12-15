@@ -7,13 +7,13 @@
   <version>1.0-SNAPSHOT</version>
   <name>easySSM Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <!--<repositories>-->
-    <!--<repository>-->
-      <!--<id>private</id>-->
-      <!--<name>私有仓库</name>-->
-      <!--<url>http://</url>-->
-    <!--</repository>-->
-  <!--</repositories>-->
+  <repositories>
+    <repository>
+      <id>private</id>
+      <name>private repo</name>
+      <url>http://maven.cfor.cn/nexus/content/groups/public/</url>
+    </repository>
+  </repositories>
   <properties>
     <!-- spring版本号 -->
     <spring.version>4.1.5.RELEASE</spring.version>
