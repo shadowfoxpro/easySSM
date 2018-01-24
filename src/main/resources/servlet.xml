@@ -17,7 +17,7 @@
 
     <!--<bean id="websocket" class="net.shangzhibo.cms.web.websocket.WebsocketEndPoint"/>-->
     <!--<websocket:handlers>-->
-    <!--<websocket:mapping path="/ws/websocket" handler="websocket"/>-->
+    <!--<websocket:pro.shadowfox.mapping path="/ws/websocket" handler="websocket"/>-->
     <!--<websocket:handshake-interceptors>-->
     <!--<bean class="net.shangzhibo.cms.web.websocket.HandshakeInterceptor"/>-->
     <!--</websocket:handshake-interceptors>-->
@@ -33,7 +33,7 @@
     <!--servlet访问静态资源 -->
     <mvc:default-servlet-handler/>
 
-    <context:component-scan base-package="cn.cfor.controller"/>
+    <context:component-scan base-package="pro.shadowfox.controller"/>
 
     <bean id="conversionService"
           class="org.springframework.format.support.FormattingConversionServiceFactoryBean">

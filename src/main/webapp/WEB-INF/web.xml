@@ -65,10 +65,10 @@
   </listener>
 
 
-  <!--<servlet-mapping>-->
+  <!--<servlet-pro.shadowfox.mapping>-->
     <!--<servlet-name>default</servlet-name>-->
     <!--<url-pattern>*.ico</url-pattern>-->
-  <!--</servlet-mapping>-->
+  <!--</servlet-pro.shadowfox.mapping>-->
 
   <servlet>
     <servlet-name>springmvc-dispatcher</servlet-name>

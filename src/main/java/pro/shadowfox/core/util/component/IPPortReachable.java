@@ -38,6 +38,6 @@ public class IPPortReachable{
 
     public static void main(String[] args) {
         Boolean result = isHostReachable("127.0.0.1",1000);
-        System.out.println("IP Ping : "result);
+        System.out.println("IP Ping : "+result);
     }
 }
