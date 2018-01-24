@@ -14,4 +14,6 @@ public interface Constants {
     /** session 过期 */
     String RESULT_SESSION_OUT = "-2";
 
+    String KAPTCHA_SESSION_KEY = "KAPTCHAsessionKEY";
+
 }

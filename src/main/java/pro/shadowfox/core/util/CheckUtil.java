@@ -24,7 +24,7 @@ public class CheckUtil {
     public static boolean checkVerificationCode(HttpServletRequest request) {
         String verificationCode = request.getParameter(VERIFICATION_CODE);
         String realVerificationCode = (String) request.getSession()
-                .getAttribute(com.google.code.kaptcha.Constants.KAPTCHA_SESSION_KEY);
+                .getAttribute(Constants.KAPTCHA_SESSION_KEY);
         return !StringUtil.isEmpty(realVerificationCode)
                 && realVerificationCode.equalsIgnoreCase(verificationCode);
     }
