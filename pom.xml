@@ -11,7 +11,7 @@
     <!--<repository>-->
       <!--<id>private</id>-->
       <!--<name>private repo</name>-->
-      <!--<url>http://maven.shadowfox.pro/nexus/content/groups/public/</url>-->
+      <!--<url>http://maven.yingjia.io/nexus/content/groups/public/</url>-->
     <!--</repository>-->
   <!--</repositories>-->
   <properties>
