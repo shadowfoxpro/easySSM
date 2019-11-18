@@ -15,7 +15,7 @@
     <!--</repository>-->
   <!--</repositories>-->
   <properties>
-    <spring.version>4.1.5.RELEASE</spring.version>
+    <spring.version>5.2.1.RELEASE</spring.version>
     <mybatis.version>3.2.8</mybatis.version>
     <slf4j.version>1.7.7</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
@@ -259,12 +259,12 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
-      <version>4.3.11.RELEASE</version>
+      <version>5.2.1.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>4.3.11.RELEASE</version>
+      <version>5.2.1.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
